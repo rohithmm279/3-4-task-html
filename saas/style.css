@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #fff;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #059669;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1f2937;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #059669;
+}
+
+.hero {
+    background: linear-gradient(135deg, #059669, #0d9488, #06b6d4);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 40px;
+    background: #fff;
+    color: #059669;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 40px;
+    background: #f9fafb;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card span {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #6b7280;
+}
+
+.cta {
+    background: linear-gradient(135deg, #0d9488, #059669);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+footer {
+    background: #111827;
+    color: #9ca3af;
+    text-align: center;
+    padding: 25px;
+}

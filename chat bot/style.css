@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 820px;
+    height: 520px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar {
+    width: 220px;
+    background: linear-gradient(180deg, #1e1b4b, #312e81);
+    padding: 25px;
+    color: white;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact {
+    padding: 14px 16px;
+    margin: 8px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    opacity: 0.8;
+}
+
+.contact:hover {
+    background: rgba(255, 255, 255, 0.15);
+    opacity: 1;
+}
+
+.contact.active {
+    background: linear-gradient(90deg, #f093fb, #f5576c);
+    opacity: 1;
+    font-weight: 600;
+}
+
+.chat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    color: white;
+    padding: 18px 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.messages {
+    flex: 1;
+    padding: 25px;
+    background: #faf5ff;
+    overflow-y: auto;
+}
+
+.msg {
+    padding: 12px 18px;
+    margin: 10px 0;
+    border-radius: 18px;
+    max-width: 65%;
+    font-size: 15px;
+}
+
+.msg.bot {
+    background: white;
+    border: 1px solid #e9d5ff;
+    border-bottom-left-radius: 5px;
+}
+
+.msg.user {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    color: white;
+    margin-left: auto;
+    border-bottom-right-radius: 5px;
+}
+
+.input-box {
+    display: flex;
+    padding: 18px;
+    gap: 12px;
+    background: white;
+    border-top: 1px solid #e9d5ff;
+}
+
+.input-box input {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid #e9d5ff;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-box input:focus {
+    border-color: #a78bfa;
+}
+
+.input-box button {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.input-box button:hover {
+    transform: scale(1.1);
+}
